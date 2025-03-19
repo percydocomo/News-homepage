@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="main.js"></script>
+  <title>Frontend Mentor | News homepage</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="header__logo-container">
+      <a href="#">
+        <img src="./assets/images/logo.svg" alt="logo">
+      </a>
+    </div>
+    <nav class="nav">
+      <button class="nav__open-menu" aria-label="Open Navigation Menu" aria-expanded="false">
+        <img aria-hidden="true" src="./assets/images/icon-menu.svg" alt="">
+      </button>
+      <div aria-hidden="true" class="nav__layer"></div>
+      <ul class="nav__menu">
+          <li><a class="nav__menu-link" href="#">Home</a></li>
+          <li><a class="nav__menu-link" href="#">New</a></li>
+          <li><a class="nav__menu-link" href="#">Popular</a></li>
+          <li><a class="nav__menu-link" href="#">Trending</a></li>
+          <li><a class="nav__menu-link" href="#">Categories</a></li>
+          <button class="nav__close-menu" aria-label="Close Navigation Menu">
+            <img aria-hidden="true" src="./assets/images/icon-menu-close.svg" alt="">
+          </button>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+        <picture class="hero__image">
+          <source srcset="./assets/images/image-web-3-mobile.jpg" media="(max-width: 700px)">
+          <img src="./assets/images/image-web-3-desktop.jpg" alt="hero image">
+        </picture>
+        <h1 class="hero__title">The Bright Future of Web 3.0?</h1>
+        <p class="hero__description">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+          But is it really fulfilling its promise?</p>
+        <button class="hero__button">Read more</button>
+    </section>
+
+    <section class="new">
+      <h2 class="new__title">New</h2>
+      <article class="new__story">
+        <h3><a class="new__story-title" href="#">Hydrogen VS Electric Cars</a></h3>
+        <p class="new__story-description">Will hydrogen-fueled cars ever catch up to EVs?</p>
+      </article>
+
+      <article class="new__story">
+        <h3><a class="new__story-title" href="#">The Downsides of AI Artistry</a></h3>
+        <p class="new__story-description">What are the possible adverse effects of on-demand AI image generation?</p>
+      </article>
+
+      <article class="new__story">
+        <h3><a class="new__story-title" href="#">Is VC Funding Drying Up?</a></h3>
+        <p class="new__story-description">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+      </article>
+    </section>
+
+    <section class="top">
+      <aticle class="top__story">
+        <img src="./assets/images/image-retro-pcs.jpg" alt="a retro computer with cassette types, a gameboy and a family gaming computer." class="blog__image">
+        <div class="top__story-content">
+          <div class="top__story-number">01</div>
+          <h3 class="top__story-title"><a href="#">Reviving Retro PCs</a></h3>
+          <p class="top__story-description">What happens when old PCs are given modern upgrades?</p>
+        </div>        
+      </aticle>
+
+      <aticle class="top__story">
+        <img src="./assets/images/image-top-laptops.jpg" alt="a laptop keyboard" class="blog__image">
+        <div class="top__story-content">
+          <div class="top__story-number">02</div>
+          <h3 class="top__story-title"><a href="#">Top 10 Laptops of 2022</a></h3>
+          <p class="top__story-description">Our best picks for various needs and budgets.
+        </p>
+        </div>
+      </aticle>
+
+      <aticle class="top__story">
+        <img src="./assets/images/image-gaming-growth.jpg" alt="a play station game controller in the air, a hand below it." class="blog__image">
+        <div class="top__story-content">
+          <div class="top__story-number">03</div>
+          <h3 class="top__story-title"><a href="#">The Growth of Gaming</a></h3>
+          <p class="top__story-description">How the pandemic has sparked fresh opportunities.</p>
+        </div>
+      </aticle>
+    </section>
+    
+    
+  </main>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">percydocomo</a>.
+  </div>
+</body>
+</html>
